@@ -1,0 +1,20 @@
+<div class="LogginContainer">
+  <div class="login-card">
+    <p class="login-heading">Welcome back</p>
+    <p class="login-subtext">Sign in to your account to continue</p>
+
+    <form>
+      <div class="form-field">
+        <label for="UserId">Username</label>
+        <input type="text" name="UserId" id="UserId" placeholder="Enter your username" [(ngModel)]="userid" />
+      </div>
+      <div class="form-field">
+        <label for="Password">Password</label>
+        <input type="password" name="Password" id="Password" placeholder="••••••••" [(ngModel)]="password" />
+      </div>
+      <div>
+        <button type="button" class="login-btn" (click)="callme()">Sign in</button>
+      </div>
+    </form>
+  </div>
+</div>
